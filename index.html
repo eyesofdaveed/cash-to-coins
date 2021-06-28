@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dollar-to-cents/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cash to coins</h1>
+            <hr>
+            <p>Instructions:</p>
+            <ul>
+                <li>- Enter the amount ($) you want to convert</li>
+                <li>- Click on the "money bag"</li>
+                <li>- You will receive the least amount of coins</li>
+            </ul>
+        </header>
+        <div class="dollar-field">
+            <input type="number" name="dollar" id="dollar">
+            <img src="/dollar-to-cents/img/money-bag.png" alt="" width="50px" onclick="getCoins()">
+        </div>   
+        <div class="coins">
+            <div class="coin">
+                <p id="quarter">0</p>
+                <p>quarter</p>
+            </div>
+            <div class="coin">
+                <p id="dime">0</p>
+                <p>dime</p>
+            </div>
+            <div class="coin">
+                <p id="nickel">0</p>
+                <p>nickel</p>
+            </div>
+            <div class="coin">
+                <p id="penny">0</p>
+                <p>penny</p>
+            </div>
+        </div>
+    </div>
+    <script src="/dollar-to-cents/script.js"></script>
+</body>
+</html>
